@@ -1,0 +1,16 @@
+{
+    "name": "OpenMageModuleFostering/CoinSimple",
+    "type": "magento-module",
+    "license": "MIT",
+    "homepage": "",
+    "description": "Allows a Magento store to accept Bitcoin using any wallet or payment processor.",
+    "authors": [
+    {
+        "name": "CoinSimple",
+        "email": "support@coinsimple.com"
+    }
+],
+    "suggest": {
+        "magento-hackathon/magento-composer-installer": "*"
+    }
+}

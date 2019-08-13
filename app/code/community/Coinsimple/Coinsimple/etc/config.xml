@@ -1,0 +1,65 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Coinsimple_Coinsimple>
+            <version>1.0</version>
+        </Coinsimple_Coinsimple>
+    </modules>
+	<frontend>
+        <routers>
+            <coinsimple_coinsimple>
+                <use>standard</use>
+                <args>
+                    <module>Coinsimple_Coinsimple</module>
+                    <frontName>coinsimple_coinsimple</frontName>
+                </args>
+            </coinsimple_coinsimple>
+        </routers>
+    </frontend>
+    <global>
+        <blocks>
+            <Coinsimple>
+                <class>Coinsimple_Coinsimple_Block</class>
+            </Coinsimple>
+        </blocks>
+
+        <models>
+            <Coinsimple>
+                <class>Coinsimple_Coinsimple_Model</class>
+            </Coinsimple>
+        </models>
+
+        <resources>
+            <Coinsimple_setup>
+                <setup>
+                    <module>Coinsimple_Coinsimple</module>
+                </setup>
+                <connection>
+                    <use>core_setup</use>
+                </connection>
+            </Coinsimple_setup>
+            <Coinsimple_write>
+                <connection>
+                  <use>core_write</use>
+                </connection>
+            </Coinsimple_write>
+            <Coinsimple_read>
+               <connection>
+                <use>core_read</use>
+              </connection>
+            </Coinsimple_read>
+        </resources>
+    </global>
+
+    <default>
+        <payment>
+            <Coinsimple>
+                <active>1</active>
+                <model>Coinsimple/paymentMethod</model>
+                <title>Bitcoin</title>
+
+                <payment_action>authorize</payment_action>
+            </Coinsimple>
+         </payment>
+    </default>
+</config>

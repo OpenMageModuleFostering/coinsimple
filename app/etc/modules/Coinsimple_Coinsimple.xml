@@ -1,0 +1,11 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <Coinsimple_Coinsimple>
+            <active>true</active>
+            <codePool>community</codePool>
+            <depends>
+            </depends>
+        </Coinsimple_Coinsimple>
+    </modules>
+</config>

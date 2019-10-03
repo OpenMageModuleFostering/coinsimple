@@ -1,3 +1,5 @@
+
+
 ## Original Package Description
 
 Allows a Magento store to accept Bitcoin using any wallet or payment processor.
